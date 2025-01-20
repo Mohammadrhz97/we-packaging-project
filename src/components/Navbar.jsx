@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { SlQuestion } from "react-icons/sl";
+import { SlArrowDown } from "react-icons/sl";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -28,8 +29,11 @@ function Navbar() {
           <li className="p-5">
             <a href="#Home">صفحه اصلی</a>
           </li>
-          <li className="p-5">
-            <a href="#Projects">محصولات</a>
+          <li className="p-5 flex flex-row-reverse items-center gap-1">
+            <a href="#Projects">محصولات</a>{" "}
+            <span>
+              <SlArrowDown className="w-3 h-3 text-white" />
+            </span>
           </li>
 
           <li className="p-5">
@@ -41,7 +45,7 @@ function Navbar() {
         </ul>
 
         <div className=" md:flex">
-          <SlQuestion className="w-6 h-6 text-gray-500" />
+          <SlQuestion className="w-6 h-6 text-gray-500 hidden md:flex mr-6" />
         </div>
 
         <div onClick={handleNav} className="block md:hidden">

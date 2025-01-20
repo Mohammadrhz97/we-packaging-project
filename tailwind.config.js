@@ -7,6 +7,13 @@ export default {
         Playwrite: ["Playwrite AU SA", "serif"],
         IBMPlex: ["IBM Plex Sans Arabic", "serif"],
       },
+      colors: {
+        transparent: "transparent",
+        current: "currentColor",
+        white: "#FFFAEC",
+        whiteCream: "#F5ECD5",
+        green: "#578E7E",
+      },
     },
   },
   plugins: [],
