@@ -22,7 +22,7 @@ function Navbar() {
   }
   return (
     <>
-      <div className="text-gray-400 flex justify-between items-center mx-auto h-14 px-4 text-1 fixed w-full backdrop-blur-sm border-b border-gray-800 z-40  ">
+      <div className="text-white flex justify-between items-center mx-auto h-14 px-4 text-1 fixed w-full backdrop-blur-sm border-b border-gray-800 z-40  ">
         <h1 className=" text-3xl font-bold primary-color ml-4">WE.</h1>
 
         <ul className="hidden md:flex md:mx-auto font-IBMPlex">
@@ -45,7 +45,7 @@ function Navbar() {
         </ul>
 
         <div className=" md:flex">
-          <SlQuestion className="w-6 h-6 text-gray-500 hidden md:flex mr-6" />
+          <SlQuestion className="w-6 h-6 text-white hidden md:flex mr-6" />
         </div>
 
         <div onClick={handleNav} className="block md:hidden">
@@ -55,7 +55,7 @@ function Navbar() {
       <div
         className={
           nav
-            ? "text-gray-300 md:hidden fixed h-full left-0 top-0 w-[50%] border-r-gray-900 bg-[#202121] ease-in-out duration-500 z-10"
+            ? "text-white md:hidden fixed h-full left-0 top-0 w-[50%] border-r-gray-900 bg-[#202121] ease-in-out duration-500 z-10"
             : "fixed left-[-100%]  ease-out duration-100"
         }
         ref={refOne}

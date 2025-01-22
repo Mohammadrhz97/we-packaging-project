@@ -1,21 +1,40 @@
 import P3 from "../assets/3.png";
+import Marquee from "react-fast-marquee";
 
 function Friends() {
   return (
-    <div className="bg-black flex items-center justify-center flex-col pt-28">
-      <h1 className="text-gray-400 font-IBMPlex font-bold text-2xl">
+    <div className=" flex items-center justify-center flex-col pt-28 mb-10 mt-32 bg-black/35 ">
+      <h1 className="text-white font-IBMPlex font-bold text-2xl z-0">
         دوستان ما
       </h1>
-      <div className="max-w-[1024px]">
-        <div className=" grid grid-cols-3 grid-rows-3 max-w-[700px] h-[250px]">
-          <img src={P3} alt="" className="col-start-2 col-span-2" />
-          <img src={P3} alt="" className="col-start-4 col-span-3" />
-          <img src={P3} alt="" className="col-start-1 row-start-2 col-span-3" />
-          <img src={P3} alt="" className="col-start-3 row-start-2 col-span-3" />
-          <img src={P3} alt="" className="col-start-6 row-start-2 col-span-3" />
-          <img src={P3} alt="" className="col-start-2 row-start-3 col-span-2" />
-          <img src={P3} alt="" className="col-start-4 row-start-3 col-span-3" />
-        </div>
+      <div className="max-w-[1024px] rounded-xl">
+        <Marquee
+          className=" mt-8 rounded-t-xl"
+          gradient="false"
+          gradientColor="black"
+        >
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+        </Marquee>
+        <Marquee
+          className="rounded-b-xl"
+          gradient="false"
+          gradientColor="black"
+          direction="right"
+        >
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+          <img src={P3} alt="" />
+        </Marquee>
       </div>
     </div>
   );
