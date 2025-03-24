@@ -1,11 +1,12 @@
 import {
-  RxCrop,
   RxDesktop,
   RxPencil2,
   RxReader,
   RxRocket,
   RxAccessibility,
 } from "react-icons/rx";
+import { FiShoppingBag } from "react-icons/fi";
+import { GiCardboardBoxClosed, GiCardboardBox } from "react-icons/gi";
 
 import SpaceCity1 from "../assets/SpaceCity1.jpg";
 import SpaceCity6 from "../assets/SpaceCity2.jpg";
@@ -16,21 +17,26 @@ import SpaceCity9 from "../assets/SpaceCity6.jpg";
 
 export const ServiceData = [
   {
-    icon: RxCrop,
-    title: "Development",
-    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+    icon: FiShoppingBag,
+    title: "شاپینگ بگ",
+    content:
+      "جهت اطلاعات بیشتر راجع به جنس بگ، نوع بند، خدمات کوب و نوع تکسکچر کلیک کنید",
     backgroundImage: SpaceCity9,
   },
   {
-    icon: RxPencil2,
-    title: "Branding",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: GiCardboardBoxClosed,
+    title: "هاردباکس",
+    content:
+      "جهت اطلاعات بیشتر راجع به جنس باکس، خدمات کوب و نوع تکسکچر کلیک کنید",
+
     backgroundImage: SpaceCity1,
   },
   {
-    icon: RxDesktop,
-    title: "Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: GiCardboardBox,
+    title: "باکس مقوایی",
+    content:
+      "جهت اطلاعات بیشتر راجع به نوع باکس ،جنس  خدمات کوب و نوع تکسکچر کلیک کنید",
+
     backgroundImage: SpaceCity6,
   },
   {
